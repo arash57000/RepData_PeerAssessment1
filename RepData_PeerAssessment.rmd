@@ -13,6 +13,7 @@ daily_exercise$date <- as.Date(daily_exercise$date, format = "%Y-%m-%d")
 
 #What is mean total number of steps taken per day?
 
+echo = TRUE
 
 library(dplyr)
 
@@ -144,7 +145,7 @@ library(dplyr)
       }
   
     }
-    
+    echo = TRUE
     # I plot weekdays and weekend  side by side by using day column as a factor to 
     # differentiate between weekdays and weekend
     
@@ -155,3 +156,6 @@ library(dplyr)
      # activity during weekdays and weekend is very different.
      # during weekdays activity remains below 100 steps and peaks during morning
      # in wekend there is no show of high level activity
+     ```{r}
+
+```
